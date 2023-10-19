@@ -9,21 +9,21 @@ function SocialProfiles() {
           href="https://github.com/SyntaxBreaker"
           className="social-profiles__link"
         >
-          <img src="github.svg" className="social-profiles__image" alt="" />{" "}
+          <img src="../github.svg" className="social-profiles__image" alt="" />{" "}
           Github
         </a>
         <a
           href="https://dev.to/SyntaxBreaker"
           className="social-profiles__link"
         >
-          <img src="codepen.svg" className="social-profiles__image" alt="" />{" "}
+          <img src="../codepen.svg" className="social-profiles__image" alt="" />{" "}
            Codepen
         </a>
         <a
           href="https://codepen.com/SyntaxBreaker"
           className="social-profiles__link"
         >
-          <img src="dev.svg" className="social-profiles__image" alt="" /> Dev.to
+          <img src="../dev.svg" className="social-profiles__image" alt="" /> Dev.to
         </a>
       </div>
     </div>

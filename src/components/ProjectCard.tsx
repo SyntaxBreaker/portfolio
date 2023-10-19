@@ -5,9 +5,9 @@ function ProjectCard({ project }: { project: IProject }) {
   return (
     <div className="project-card">
       <div className="project-card__header">
-        <a href={`${project.html_url}`}><img src="github.svg" alt="" className="project-card__icon" /></a>
+        <a href={`${project.html_url}`}><img src="../github.svg" alt="" className="project-card__icon" /></a>
         {project.homepage && project.name !== "Portfolio" && (
-          <a href={`${project.homepage}`}><img src="link.svg" alt="" className="project-card__icon" /></a>
+          <a href={`${project.homepage}`}><img src="../link.svg" alt="" className="project-card__icon" /></a>
         )}
       </div>
       <div className="project-card__body">
