@@ -1,0 +1,25 @@
+@use "./variables";
+
+.card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 320px;
+        padding: 48px;
+        background-color: variables.$primaryColor;
+        border-radius: 24px;
+
+    &__title {
+        font-size: 48px;
+        color: white;
+
+        @media screen and (min-width: 1280px) {
+            font-size: 64px;
+        }
+    }
+
+    &__description {
+        color: variables.$secondaryColor;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,31 @@
+@use "./variables";
+
+.stack {
+    &__heading {
+        font-size: 24px;
+        color: white;
+    }
+
+    &__cards {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media screen and (min-width: 1280px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        padding: 16px;
+        flex-basis: calc(25% - 8px);
+        background-color: variables.$primaryColor;
+        border-radius: 16px;
+    }
+
+    &__name {
+        color: variables.$secondaryColor;
+    }
+}

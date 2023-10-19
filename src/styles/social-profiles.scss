@@ -1,0 +1,43 @@
+@use "./variables";
+
+.social-profiles {
+    flex-basis: 100%;
+
+    @media screen and (min-width: 1280px) {
+        flex-basis: calc(50% - 16px);
+    }
+
+    &__title {
+        font-size: 24px;
+        color: white;
+    }
+
+    &__links {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 24px;
+        background-color: variables.$primaryColor;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: variables.$secondaryColor;
+        }
+    }
+
+    &__image {
+        width: 24px;
+        height: 24px;
+    }
+}
