@@ -6,9 +6,12 @@ import SocialProfiles from "../components/SocialProfiles";
 ---
 
 <Layout title="SyntaxBreaker's Portfolio | Contact">
-  <Card title="Contact" description="Are you interested in collaborating? Your messages are always welcome, so feel free to contact me anytime!" />
+  <Card
+    title="Contact"
+    description="Are you interested in collaborating? Your messages are always welcome, so feel free to contact me anytime!"
+  />
   <div style="display: flex; flex-wrap: wrap; gap: 32px">
-    <Form />
+    <Form client:load />
     <SocialProfiles />
   </div>
 </Layout>
