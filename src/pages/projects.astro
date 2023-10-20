@@ -3,11 +3,13 @@ import Layout from "../layouts/layout.astro";
 import Card from "../components/Card";
 import ProjectList from "../components/ProjectList";
 
-const response = await fetch('https://api.github.com/users/SyntaxBreaker/repos');
+const response = await fetch(
+  "https://api.github.com/users/SyntaxBreaker/repos",
+);
 const projects = await response.json();
 ---
 
 <Layout title="SyntaxBreaker's Portfolio | Projects">
-    <Card title="Projects" description="You can see my projects below." />
-    <ProjectList projects={projects} />
+  <Card title="Projects" description="You can see my projects below." />
+  <ProjectList projects={projects} />
 </Layout>

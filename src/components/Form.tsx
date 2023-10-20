@@ -21,19 +21,19 @@ function Form() {
         import.meta.env.PUBLIC_SERVICE_ID,
         import.meta.env.PUBLIC_TEMPLATE_ID,
         form.current as HTMLFormElement,
-        import.meta.env.PUBLIC_PUBLIC_KEY
+        import.meta.env.PUBLIC_PUBLIC_KEY,
       )
       .then(() =>
         setFormStatus({
           status: "Success",
           message: "The email has been sent successfully.",
-        })
+        }),
       )
       .catch(() =>
         setFormStatus({
           status: "Error",
           message: "An error occurred while attempting to send the email.",
-        })
+        }),
       )
       .finally(() => form.current?.reset());
   };

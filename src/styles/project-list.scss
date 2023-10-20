@@ -1,10 +1,10 @@
 .project-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    @media screen and (min-width: 1280px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

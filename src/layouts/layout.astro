@@ -11,7 +11,10 @@ const currentPath = pathname.slice(1);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Welcome to my portfolio! I'm a self-taught front-end developer who enjoys creating digital products and solutions.">
+    <meta
+      name="description"
+      content="Welcome to my portfolio! I'm a self-taught front-end developer who enjoys creating digital products and solutions."
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -24,13 +27,25 @@ const currentPath = pathname.slice(1);
         </div>
         <ul class="layout__list">
           <li class="layout__item">
-            <a href="/" class=`layout__link ${currentPath === "" ? "layout__link--active" : ""}`>Home</a>
+            <a
+              href="/"
+              class=`layout__link ${currentPath === "" ? "layout__link--active" : ""}`
+              >Home</a
+            >
           </li>
           <li class="layout__item">
-            <a href="/projects" class=`layout__link ${currentPath === "projects" ? "layout__link--active" : ""}`>Projects</a>
+            <a
+              href="/projects"
+              class=`layout__link ${currentPath === "projects" ? "layout__link--active" : ""}`
+              >Projects</a
+            >
           </li>
           <li class="layout__item">
-            <a href="/contact" class=`layout__link ${currentPath === "contact" ? "layout__link--active" : ""}`>Contact</a>
+            <a
+              href="/contact"
+              class=`layout__link ${currentPath === "contact" ? "layout__link--active" : ""}`
+              >Contact</a
+            >
           </li>
         </ul>
         <div class="layout__profile">

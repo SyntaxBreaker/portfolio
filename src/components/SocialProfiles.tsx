@@ -17,13 +17,14 @@ function SocialProfiles() {
           className="social-profiles__link"
         >
           <img src="../codepen.svg" className="social-profiles__image" alt="" />{" "}
-           Codepen
+          Codepen
         </a>
         <a
           href="https://codepen.com/SyntaxBreaker"
           className="social-profiles__link"
         >
-          <img src="../dev.svg" className="social-profiles__image" alt="" /> Dev.to
+          <img src="../dev.svg" className="social-profiles__image" alt="" />{" "}
+          Dev.to
         </a>
       </div>
     </div>
