@@ -2,7 +2,7 @@ import "../styles/stack.scss";
 
 function Stack() {
   return (
-    <div className="stack">
+    <section className="stack">
       <h2 className="stack__heading">Stack</h2>
       <div className="stack__cards">
         <div className="stack__card">
@@ -30,7 +30,7 @@ function Stack() {
           <p className="stack__name">Git</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

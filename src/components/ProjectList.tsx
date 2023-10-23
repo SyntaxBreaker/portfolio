@@ -4,7 +4,7 @@ import "../styles/project-list.scss";
 
 function ProjectList({ projects }: { projects: IProject[] }) {
   return (
-    <div className="project-list">
+    <section className="project-list">
       {projects.length > 0 &&
         projects.map(
           (project: IProject) =>
@@ -13,7 +13,7 @@ function ProjectList({ projects }: { projects: IProject[] }) {
               <ProjectCard project={project} key={project.id} />
             ),
         )}
-    </div>
+    </section>
   );
 }
 

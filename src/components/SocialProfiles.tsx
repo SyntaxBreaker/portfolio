@@ -2,7 +2,7 @@ import "../styles/social-profiles.scss";
 
 function SocialProfiles() {
   return (
-    <div className="social-profiles">
+    <section className="social-profiles">
       <h1 className="social-profiles__title">SOCIALS</h1>
       <div className="social-profiles__links">
         <a
@@ -27,7 +27,7 @@ function SocialProfiles() {
           Dev.to
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 
