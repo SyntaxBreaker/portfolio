@@ -32,7 +32,12 @@
     border-radius: 12px;
 
     &:hover {
-      background-color: variables.$secondaryColor;
+      background-color: white;
+      color: black;
+
+      & > .social-profiles__image {
+        filter: brightness(0%);
+      }
     }
   }
 
