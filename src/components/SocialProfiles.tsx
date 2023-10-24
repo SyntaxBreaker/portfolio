@@ -13,14 +13,14 @@ function SocialProfiles() {
           Github
         </a>
         <a
-          href="https://dev.to/SyntaxBreaker"
+          href="https://codepen.io/SyntaxBreaker"
           className="social-profiles__link"
         >
           <img src="../codepen.svg" className="social-profiles__image" alt="" />{" "}
           Codepen
         </a>
         <a
-          href="https://codepen.com/SyntaxBreaker"
+          href="https://dev.to/SyntaxBreaker"
           className="social-profiles__link"
         >
           <img src="../dev.svg" className="social-profiles__image" alt="" />{" "}
