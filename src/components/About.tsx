@@ -22,8 +22,7 @@ function About() {
           </div>
           <div className="about__body">
             <p className="about__text">
-              My interests are Programming, Creating digital products and
-              solutions, Personal Development, and Automotive.
+              My interests are programming, creating digital products and solutions, personal development, and automotive.
             </p>
           </div>
         </div>
