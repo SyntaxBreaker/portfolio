@@ -33,7 +33,7 @@ function About() {
           </div>
           <div className="about__body">
             <p className="about__text">
-              Current goal: Get the first job as a front-end developer.
+              Current goal: Get my first job as a front-end developer.
             </p>
           </div>
         </div>
