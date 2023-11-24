@@ -1,6 +1,7 @@
 ---
 import "../styles/global.scss";
 import "../styles/layout.scss";
+
 const { title } = Astro.props;
 
 const pathname = new URL(Astro.request.url).pathname;
@@ -23,7 +24,9 @@ const currentPath = pathname.slice(1);
         <div class="layout__menu">
           <a href="/" class="layout__link layout__link--title">Portfolio</a>
           <input type="checkbox" id="menu-toggle" class="layout__input" />
-          <label class="layout__button" for="menu-toggle">☰</label>
+          <label class="layout__button" for="menu-toggle">
+            <img src="/menuIcon.svg" alt="Menu Icon" />
+          </label>
         </div>
         <ul class="layout__list">
           <li class="layout__item">
@@ -62,7 +65,7 @@ const currentPath = pathname.slice(1);
     </div>
     <script>
       const checkbox = document.querySelector(
-        ".layout__input",
+        ".layout__input"
       ) as HTMLInputElement;
       const nav = document.querySelector(".layout__nav");
       const list = document.querySelector(".layout__list");
