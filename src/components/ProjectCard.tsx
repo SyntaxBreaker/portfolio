@@ -5,7 +5,7 @@ function ProjectCard({ project }: { project: IProject }) {
   return (
     <div className="project-card">
       <div className="project-card__header">
-        <a href={`${project.html_url}`}>
+        <a href={`${project.html_url}`} target="_blank">
           <img
             src="../github.svg"
             alt=""
@@ -14,7 +14,7 @@ function ProjectCard({ project }: { project: IProject }) {
           />
         </a>
         {project.homepage && project.name !== "Portfolio" && (
-          <a href={`${project.homepage}`}>
+          <a href={`${project.homepage}`} target="_blank">
             <img
               src="../link.svg"
               alt=""

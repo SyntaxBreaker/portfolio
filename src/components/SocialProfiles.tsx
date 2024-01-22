@@ -7,6 +7,7 @@ function SocialProfiles() {
       <div className="social-profiles__links">
         <a
           href="https://github.com/SyntaxBreaker"
+          target="_blank"
           className="social-profiles__link"
         >
           <img src="../github.svg" className="social-profiles__image" alt="" />{" "}
@@ -14,6 +15,7 @@ function SocialProfiles() {
         </a>
         <a
           href="https://codepen.io/SyntaxBreaker"
+          target="_blank"
           className="social-profiles__link"
         >
           <img src="../codepen.svg" className="social-profiles__image" alt="" />{" "}
@@ -21,6 +23,7 @@ function SocialProfiles() {
         </a>
         <a
           href="https://dev.to/SyntaxBreaker"
+          target="_blank"
           className="social-profiles__link"
         >
           <img src="../dev.svg" className="social-profiles__image" alt="" />{" "}
