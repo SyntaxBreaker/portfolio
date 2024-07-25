@@ -50,13 +50,14 @@
       flex-basis: 100%;
       font-weight: bold;
       border-radius: 12px;
-      background-color: white;
-      color: black;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
 
       &:hover {
         cursor: pointer;
-        background-color: #364156;
-        color: white;
+        background-color: white;
+        color: black;
       }
     }
   }
