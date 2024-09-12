@@ -1,6 +1,8 @@
 ---
+import { Image } from "astro:assets";
 import "../styles/global.scss";
 import "../styles/layout.scss";
+import avatarImage from "../../public/avatar.webp";
 
 const { title } = Astro.props;
 
@@ -52,7 +54,12 @@ const currentPath = pathname.slice(1);
           </li>
         </ul>
         <div class="layout__profile">
-          <img src="/avatar.webp" alt="avatar" class="layout__avatar" />
+          <Image
+            src={avatarImage}
+            alt="avatar"
+            class="layout__avatar"
+            loading="eager"
+          />
           <div class="layout__info">
             <p class="layout__nickname">SyntaxBreaker</p>
             <p class="layout__profession">Front-End Developer</p>
