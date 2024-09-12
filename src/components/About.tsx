@@ -7,7 +7,7 @@ function About() {
       <div className="about__cards">
         <div className="about__card">
           <div className="about__header">
-            <img src="about.svg" alt="" />
+            <img src="about.svg" alt="" height={32} width={32} />
           </div>
           <div className="about__body">
             <p className="about__text">
@@ -18,17 +18,18 @@ function About() {
         </div>
         <div className="about__card">
           <div className="about__header">
-            <img src="interests.svg" alt="" />
+            <img src="interests.svg" alt="" height={32} width={32} />
           </div>
           <div className="about__body">
             <p className="about__text">
-              My interests are programming, creating digital products and solutions, cybersecurity, personal development, and automotive.
+              My interests are programming, creating digital products and
+              solutions, cybersecurity, personal development, and automotive.
             </p>
           </div>
         </div>
         <div className="about__card">
           <div className="about__header">
-            <img src="goal.svg" alt="" />
+            <img src="goal.svg" alt="" height={32} width={32} />
           </div>
           <div className="about__body">
             <p className="about__text">
@@ -38,7 +39,7 @@ function About() {
         </div>
         <div className="about__card">
           <div className="about__header">
-            <img src="quote.svg" alt="" />
+            <img src="quote.svg" alt="" height={32} width={32} />
           </div>
           <div className="about__body">
             <p className="about__text">

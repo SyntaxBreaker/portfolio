@@ -10,7 +10,13 @@ function ProjectCard({ project }: { project: IProject }) {
           target="_blank"
           aria-label="Link to GitHub repository"
         >
-          <img src="../github.svg" alt="" className="project-card__icon" />
+          <img
+            src="../github.svg"
+            alt=""
+            className="project-card__icon"
+            height={32}
+            width={32}
+          />
         </a>
         {project.homepage && project.name !== "Portfolio" && (
           <a
@@ -18,7 +24,13 @@ function ProjectCard({ project }: { project: IProject }) {
             target="_blank"
             aria-label={`Link to ${project.name} website`}
           >
-            <img src="../link.svg" alt="" className="project-card__icon" />
+            <img
+              src="../link.svg"
+              alt=""
+              className="project-card__icon"
+              height={32}
+              width={32}
+            />
           </a>
         )}
       </div>
