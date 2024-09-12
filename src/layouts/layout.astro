@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import "../styles/global.scss";
 import "../styles/layout.scss";
 import avatarImage from "../../public/avatar.webp";
+import menuIcon from "../../public/menuIcon.svg";
 
 const { title } = Astro.props;
 
@@ -27,7 +28,7 @@ const currentPath = pathname.slice(1);
           <a href="/" class="layout__link layout__link--title">Portfolio</a>
           <input type="checkbox" id="menu-toggle" class="layout__input" />
           <label class="layout__button" for="menu-toggle">
-            <img src="/menuIcon.svg" alt="Menu Icon" />
+            <Image src={menuIcon} alt="Menu Icon" />
           </label>
         </div>
         <ul class="layout__list">
