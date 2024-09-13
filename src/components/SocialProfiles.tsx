@@ -3,7 +3,7 @@ import "../styles/social-profiles.scss";
 function SocialProfiles() {
   return (
     <section className="social-profiles">
-      <h1 className="social-profiles__title">Socials</h1>
+      <h2 className="social-profiles__title">Socials</h2>
       <div className="social-profiles__links">
         <a
           href="https://github.com/SyntaxBreaker"
