@@ -1,9 +1,7 @@
 ---
-import { Image } from "astro:assets";
 import "../styles/global.scss";
 import "../styles/layout.scss";
-import avatarImage from "../../public/avatar.webp";
-import menuIcon from "../../public/menuIcon.svg";
+import Navbar from "../components/Navbar";
 
 const { title } = Astro.props;
 
@@ -23,72 +21,27 @@ const currentPath = pathname.slice(1);
   </head>
   <body>
     <div class="layout">
-      <nav class="layout__nav">
-        <div class="layout__menu">
-          <a href="/" class="layout__link layout__link--title">Portfolio</a>
-          <input type="checkbox" id="menu-toggle" class="layout__input" />
-          <label class="layout__button" for="menu-toggle">
-            <Image src={menuIcon} alt="Menu Icon" loading="eager" />
-          </label>
-        </div>
-        <ul class="layout__list">
-          <li class="layout__item">
-            <a
-              href="/"
-              class={`layout__link ${currentPath === "" ? "layout__link--active" : ""}`}
-              >Home</a
-            >
-          </li>
-          <li class="layout__item">
-            <a
-              href="/projects"
-              class={`layout__link ${currentPath === "projects/" ? "layout__link--active" : ""}`}
-              >Projects</a
-            >
-          </li>
-          <li class="layout__item">
-            <a
-              href="/contact"
-              class={`layout__link ${currentPath === "contact/" ? "layout__link--active" : ""}`}
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <div class="layout__profile">
-          <Image
-            src={avatarImage}
-            alt="avatar"
-            class="layout__avatar"
-            loading="eager"
-            height={64}
-            width={64}
-          />
-          <div class="layout__info">
-            <p class="layout__nickname">SyntaxBreaker</p>
-            <p class="layout__profession">Front-End Developer</p>
-          </div>
-        </div>
-      </nav>
+      <Navbar currentPath={currentPath} />
       <main class="layout__main">
         <slot />
       </main>
     </div>
     <script>
       const checkbox = document.querySelector(
-        ".layout__input"
+        ".navbar__input"
       ) as HTMLInputElement;
-      const nav = document.querySelector(".layout__nav");
-      const list = document.querySelector(".layout__list");
-      const profile = document.querySelector(".layout__profile");
+      const nav = document.querySelector(".navbar");
+      const list = document.querySelector(".navbar__list");
+      const profile = document.querySelector(".navbar__profile");
       checkbox.addEventListener("change", () => {
         if (checkbox.checked === true) {
-          nav?.classList.add("layout__nav--active");
-          list?.classList.add("layout__list--active");
-          profile?.classList.add("layout__profile--active");
+          nav?.classList.add("navbar--active");
+          list?.classList.add("navbar__list--active");
+          profile?.classList.add("navbar__profile--active");
         } else {
-          nav?.classList.remove("layout__nav--active");
-          list?.classList.remove("layout__list--active");
-          profile?.classList.remove("layout__profile--active");
+          nav?.classList.remove("navbar--active");
+          list?.classList.remove("navbar__list--active");
+          profile?.classList.remove("navbar__profile--active");
         }
       });
     </script>
