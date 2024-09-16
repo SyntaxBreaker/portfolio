@@ -1,4 +1,5 @@
 import "../styles/stack.scss";
+import StackCard from "./StackCard";
 
 const techStack = [
   "HTML",
@@ -17,9 +18,7 @@ function Stack() {
       <h2 className="stack__heading">Stack</h2>
       <div className="stack__cards">
         {techStack.map((stack) => (
-          <div key={stack} className="stack__card">
-            <p className="stack__name">{stack}</p>
-          </div>
+          <StackCard key={stack} text={stack} />
         ))}
       </div>
     </section>
