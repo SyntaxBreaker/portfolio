@@ -50,8 +50,8 @@
       flex-basis: 100%;
       font-weight: bold;
       border-radius: 12px;
-      background-color: transparent;
-      border: 1px solid white;
+      background-color: variables.$primaryColor;
+      border: 2px solid #212d40;
       color: white;
 
       &:hover {
