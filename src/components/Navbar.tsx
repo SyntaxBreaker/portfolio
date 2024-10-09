@@ -49,18 +49,8 @@ function Navbar({ currentPath }: NavbarProps) {
         </li>
       </ul>
       <div className="navbar__profile">
-        <img
-          src="../avatar.webp"
-          alt="avatar"
-          className="navbar__avatar"
-          loading="eager"
-          height={64}
-          width={64}
-        />
-        <div className="navbar__info">
-          <p className="navbar__nickname">SyntaxBreaker</p>
-          <p className="navbar__profession">Front-End Developer</p>
-        </div>
+        <p className="navbar__nickname">SyntaxBreaker</p>
+        <p className="navbar__profession">Front-End Developer</p>
       </div>
     </nav>
   );

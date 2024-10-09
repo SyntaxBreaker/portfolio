@@ -88,36 +88,15 @@
 
     @media screen and (min-width: 1280px) {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 16px;
+      flex-direction: column;
+      gap: 4px;
       position: absolute;
       bottom: 48px;
     }
-
-    &--active {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 16px;
-      position: absolute;
-      bottom: 32px;
-    }
-  }
-
-  &__avatar {
-    width: 64px;
-    height: 64px;
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
   }
 
   &__nickname {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
   }
 
