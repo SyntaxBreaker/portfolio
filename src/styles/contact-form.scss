@@ -45,6 +45,11 @@
     color: variables.$secondaryColor;
     font-size: 16px;
 
+    &:focus {
+      outline: none;
+      border: 1px solid #212d40;
+    }
+
     &--button {
       margin-top: 4px;
       flex-basis: 100%;
@@ -70,5 +75,10 @@
     border-radius: 12px;
     border: none;
     color: variables.$secondaryColor;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #212d40;
+    }
   }
 }
