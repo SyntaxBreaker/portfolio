@@ -22,6 +22,10 @@
   &__icon {
     width: 32px;
     height: 32px;
+
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 
   &__body {
