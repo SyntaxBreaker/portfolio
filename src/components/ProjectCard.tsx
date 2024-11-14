@@ -1,5 +1,6 @@
 import type IProject from "../types/project";
 import "../styles/project-card.scss";
+import TechnologyList from "./TechnologyList";
 
 function ProjectCard({ project }: { project: IProject }) {
   return (
@@ -37,6 +38,7 @@ function ProjectCard({ project }: { project: IProject }) {
       <div className="project-card__body">
         <h2 className="project-card__name">{project.name}</h2>
         <p className="project-card__description">{project.description}</p>
+        <TechnologyList technologies={project.topics} />
       </div>
     </div>
   );
