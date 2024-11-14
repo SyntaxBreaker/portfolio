@@ -38,7 +38,7 @@
     width: 36px;
     position: absolute;
     right: 32px;
-    color: white;
+    color: #FEFEFE;
     cursor: pointer;
 
     @media screen and (min-width: 1280px) {
@@ -74,12 +74,12 @@
     }
 
     &--title {
-      color: white;
+      color: #FEFEFE;
       font-size: 32px;
     }
 
     &--active {
-      color: white;
+      color: #FEFEFE;
     }
   }
 
@@ -97,7 +97,7 @@
 
   &__nickname {
     font-size: 14px;
-    color: white;
+    color: #FEFEFE;
   }
 
   &__profession {

@@ -9,7 +9,7 @@
 
   &__title {
     font-size: 24px;
-    color: white;
+    color: #FEFEFE;
   }
 
   &__status {
@@ -57,11 +57,11 @@
       border-radius: 12px;
       background-color: variables.$primaryColor;
       border: 2px solid #212d40;
-      color: white;
+      color: #FEFEFE;
 
       &:hover {
         cursor: pointer;
-        background-color: white;
+        background-color: #FEFEFE;
         color: black;
       }
     }
