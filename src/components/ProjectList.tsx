@@ -6,13 +6,16 @@ function ProjectList({ projects }: { projects: IProject[] }) {
   return (
     <section className="project-list">
       {projects.length > 0 &&
-        projects.map(
-          (project: IProject) =>
-            project.fork === false &&
-            project.name !== "SyntaxBreaker" && (
-              <ProjectCard project={project} key={project.id} />
-            ),
-        )}
+        projects.map((project: IProject) => (
+          <ProjectCard project={project} key={project.id} />
+        ))}
+      <a
+        href="https://github.com/SyntaxBreaker?tab=repositories"
+        target="_blank"
+        className="project-list__link"
+      >
+        See All My Projects
+      </a>
     </section>
   );
 }

@@ -1,7 +1,16 @@
+@use "./variables";
+
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  &__link {
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #fefefe;
+    text-underline-offset: 4px;
+  }
 
   @media screen and (min-width: 1280px) {
     flex-direction: row;

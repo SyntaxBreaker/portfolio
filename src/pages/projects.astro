@@ -7,9 +7,16 @@ const response = await fetch(
   "https://api.github.com/users/SyntaxBreaker/repos"
 );
 const projects = await response.json();
+const filteredProjects = projects.filter(
+  (project) =>
+    project.name === "Portfolio" ||
+    project.name === "SelfDiscover" ||
+    project.name === "TrackHub" ||
+    project.name === "TwitchChat"
+);
 ---
 
 <Layout title="SyntaxBreaker Projects">
   <Card title="Projects" description="You can see my projects below." />
-  <ProjectList projects={projects} />
+  <ProjectList projects={filteredProjects} />
 </Layout>
