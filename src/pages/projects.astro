@@ -2,17 +2,15 @@
 import Layout from "../layouts/layout.astro";
 import Card from "../components/Card";
 import ProjectList from "../components/ProjectList";
+import type IProject from "../types/project";
 
 const response = await fetch(
   "https://api.github.com/users/SyntaxBreaker/repos"
 );
-const projects = await response.json();
-const filteredProjects = projects.filter(
-  (project) =>
-    project.name === "Portfolio" ||
-    project.name === "SelfDiscover" ||
-    project.name === "TrackHub" ||
-    project.name === "TwitchChat"
+const projects: IProject[] = await response.json();
+const projectNames = ["Portfolio", "SelfDiscover", "TrackHub", "TwitchChat"];
+const filteredProjects = projects.filter((project) =>
+  projectNames.includes(project.name)
 );
 ---
 
