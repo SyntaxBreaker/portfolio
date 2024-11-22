@@ -3,7 +3,7 @@
 .about {
   &__heading {
     font-size: 24px;
-    color: #FEFEFE;
+    color: #fefefe;
   }
 
   &__cards {
@@ -19,7 +19,7 @@
   }
 
   &__card {
-    padding: 32px;
+    padding: 24px;
     background-color: variables.$primaryColor;
     display: flex;
     flex-direction: column;
