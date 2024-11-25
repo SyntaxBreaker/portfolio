@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../styles/contact-form.scss";
 
 interface IFormStatus {
   status: string;

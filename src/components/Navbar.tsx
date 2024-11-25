@@ -1,5 +1,3 @@
-import "../styles/navbar.scss";
-
 interface NavbarProps {
   currentPath: string;
 }

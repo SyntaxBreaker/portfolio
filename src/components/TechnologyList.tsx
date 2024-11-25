@@ -1,5 +1,3 @@
-import "../styles/technology-list.scss";
-
 interface TechnologyListProps {
   technologies: string[];
 }

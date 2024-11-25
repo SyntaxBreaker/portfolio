@@ -1,4 +1,3 @@
-import "../styles/stack.scss";
 import StackCard from "./StackCard";
 
 const techStack = [

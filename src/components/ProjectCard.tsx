@@ -1,5 +1,4 @@
 import type IProject from "../types/project";
-import "../styles/project-card.scss";
 import TechnologyList from "./TechnologyList";
 
 function ProjectCard({ project }: { project: IProject }) {

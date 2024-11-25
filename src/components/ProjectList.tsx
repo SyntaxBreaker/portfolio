@@ -1,6 +1,5 @@
 import type IProject from "../types/project";
 import ProjectCard from "./ProjectCard";
-import "../styles/project-list.scss";
 
 function ProjectList({ projects }: { projects: IProject[] }) {
   return (

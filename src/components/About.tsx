@@ -1,4 +1,3 @@
-import "../styles/about.scss";
 import AboutCard from "./AboutCard";
 
 const cardData = [

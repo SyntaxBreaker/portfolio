@@ -1,4 +1,3 @@
-import "../styles/social-profiles.scss";
 import SocialProfile from "./SocialProfile";
 
 const socialProfilesData = [

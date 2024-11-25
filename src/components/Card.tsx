@@ -1,5 +1,3 @@
-import "../styles/card.scss";
-
 interface CardProps {
   title: string;
   description: string;
