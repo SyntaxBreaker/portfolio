@@ -15,7 +15,8 @@ function Card({ title, description }: CardProps) {
       <h1 className="card__title">
         {specialTitle ? (
           <>
-            {baseTitle}. <span className="card__waving-hand">{specialTitle}</span>
+            {baseTitle}.{" "}
+            <span className="card__waving-hand">{specialTitle}</span>
           </>
         ) : (
           baseTitle
