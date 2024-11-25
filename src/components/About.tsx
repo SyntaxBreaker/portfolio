@@ -19,7 +19,7 @@ const cardData = [
   {
     id: 3,
     imgSrc: "goal.svg",
-    text: "Current goal: Get my first job as a front-end developer.",
+    text: "Current goal: Get my first job as a front-end developer, preferably remote.",
   },
 ];
 
