@@ -8,18 +8,18 @@ const cardData = [
   },
   {
     id: 1,
+    imgSrc: "location.svg",
+    text: "I am currently located in Poland, a country known for its rich history, vibrant culture, and beautiful landscapes.",
+  },
+  {
+    id: 2,
     imgSrc: "interests.svg",
     text: "My interests are programming, creating digital products and solutions, cybersecurity, personal development, and automotive.",
   },
   {
-    id: 2,
+    id: 3,
     imgSrc: "goal.svg",
     text: "Current goal: Get my first job as a front-end developer.",
-  },
-  {
-    id: 3,
-    imgSrc: "quote.svg",
-    text: "Quote: `Failure is simply the opportunity to begin again, this time more intelligently.` ~Henry Ford",
   },
 ];
 
