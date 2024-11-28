@@ -5,20 +5,22 @@ function ProjectCard({ project }: { project: IProject }) {
   return (
     <div className="project-card">
       <div className="project-card__header">
-        <a
-          href={`${project.html_url}`}
-          target="_blank"
-          aria-label="Link to GitHub repository"
-        >
-          <img
-            src="../github.svg"
-            alt=""
-            className="project-card__icon"
-            height={32}
-            width={32}
-          />
-        </a>
-        {project.homepage && project.name !== "Portfolio" && (
+        {project.html_url && (
+          <a
+            href={`${project.html_url}`}
+            target="_blank"
+            aria-label="Link to GitHub repository"
+          >
+            <img
+              src="../github.svg"
+              alt=""
+              className="project-card__icon"
+              height={32}
+              width={32}
+            />
+          </a>
+        )}
+        {project.homepage && (
           <a
             href={`${project.homepage}`}
             target="_blank"
