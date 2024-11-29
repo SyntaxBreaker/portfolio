@@ -1,14 +1,14 @@
 @use "./variables";
 
 .technology-list {
+  margin-top: 16px;
   display: flex;
   flex-direction: row;
-  gap: 4px 8px;
+  gap: 8px;
   flex-wrap: wrap;
   list-style-type: none;
 
   &__item {
-    margin-top: 16px;
     color: variables.$secondaryColor;
     font-size: 0.75rem;
   }
