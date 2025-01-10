@@ -4,11 +4,13 @@ const techStack = [
   "HTML",
   "CSS",
   "SCSS",
-  "Javascript",
-  "Typescript",
+  "JavaScript",
+  "TypeScript",
+  "Node.js",
   "React",
   "Next.js",
   "Git",
+  "Tailwind CSS",
 ];
 
 function Stack() {
