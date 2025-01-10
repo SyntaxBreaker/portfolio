@@ -14,7 +14,7 @@ const cardData = [
   {
     id: 2,
     imgSrc: "interests.svg",
-    text: "My interests are programming, creating digital products and solutions, cybersecurity, personal development, and automotive.",
+    text: "My interests include programming, creating digital solutions, cybersecurity, personal development, and automotive.",
   },
   {
     id: 3,
