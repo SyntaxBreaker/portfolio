@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  font-size: 24px;
+  font-size: 1.5rem;
   border-radius: 24px;
   position: fixed;
   width: calc(100% - 32px);
@@ -68,15 +68,15 @@
     color: variables.$secondaryColor;
     text-decoration: none;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;
 
     @media screen and (min-width: 1280px) {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
 
     &--title {
       color: #fefefe;
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     &--active {
@@ -97,12 +97,12 @@
   }
 
   &__nickname {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fefefe;
   }
 
   &__profession {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: variables.$secondaryColor;
   }
 }

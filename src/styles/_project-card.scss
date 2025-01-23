@@ -35,13 +35,13 @@
   }
 
   &__name {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #fefefe;
     text-transform: capitalize;
   }
 
   &__description {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: variables.$secondaryColor;
   }
 }

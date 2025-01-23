@@ -2,7 +2,7 @@
 
 .about {
   &__heading {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #fefefe;
   }
 
@@ -19,7 +19,7 @@
   }
 
   &__card {
-    padding: 24px;
+    padding: 1.5rem;
     background-color: variables.$primaryColor;
     display: flex;
     flex-direction: column;

@@ -32,17 +32,17 @@
   border-radius: 24px;
 
   &__title {
-    font-size: 48px;
+    font-size: 3rem;
     color: #fefefe;
 
     @media screen and (min-width: 1280px) {
-      font-size: 64px;
+      font-size: 4rem;
     }
   }
 
   &__description {
     color: variables.$secondaryColor;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   &__waving-hand {
