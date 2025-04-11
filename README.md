@@ -13,7 +13,7 @@ Built with precision using Astro and React, my portfolio combines elegance with 
 This is a list of commands to install the project:
 
 ```bash
-git clone https://github.com/SyntaxBreaker/Portfolio.git
+git clone git@github.com:SyntaxBreaker/portfolio.git
 
 cd Portfolio
 
