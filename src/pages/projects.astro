@@ -11,7 +11,7 @@ async function getProjects() {
     );
     const projects: IProject[] = await response.json();
 
-    const projectNames = ["SelfDiscover", "TrackHub", "TwitchChat"];
+    const projectNames = ["self-discover", "trackhub", "twitch-chat"];
 
     return projects.filter((project) => projectNames.includes(project.name));
   } catch (error) {
