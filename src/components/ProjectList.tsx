@@ -11,6 +11,7 @@ function ProjectList({ projects }: { projects: IProject[] }) {
       <a
         href="https://github.com/SyntaxBreaker?tab=repositories"
         target="_blank"
+        rel="noopener noreferrer"
         className="project-list__link"
       >
         See All My Projects

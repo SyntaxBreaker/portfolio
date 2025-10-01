@@ -9,6 +9,7 @@ function ProjectCard({ project }: { project: IProject }) {
           <a
             href={`${project.html_url}`}
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="Link to GitHub repository"
           >
             <img
@@ -24,6 +25,7 @@ function ProjectCard({ project }: { project: IProject }) {
           <a
             href={`${project.homepage}`}
             target="_blank"
+            rel="noopener noreferrer"
             aria-label={`Link to ${project.name} website`}
           >
             <img

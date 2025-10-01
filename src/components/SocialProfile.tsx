@@ -6,7 +6,12 @@ interface SocialProfileProps {
 
 function SocialProfile({ href, imgSrc, label }: SocialProfileProps) {
   return (
-    <a href={href} target="_blank" className="social-profiles__link">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-profiles__link"
+    >
       <img src={imgSrc} className="social-profiles__image" alt="" /> {label}
     </a>
   );
