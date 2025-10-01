@@ -1,0 +1,31 @@
+@use "./variables";
+
+.contact-cta {
+  &__title {
+    font-size: 1.5rem;
+    color: #fefefe;
+  }
+
+  &__links {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__link {
+    padding: 24px;
+    background-color: variables.$primaryColor;
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 12px;
+    flex-basis: 50%;
+
+    &:hover {
+      background-color: #fefefe;
+      color: black;
+    }
+  }
+}
