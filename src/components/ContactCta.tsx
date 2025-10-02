@@ -6,12 +6,7 @@ function ContactCta() {
         <a className="contact-cta__link" href="/contact">
           Let's Connect
         </a>
-        <a
-          className="contact-cta__link"
-          href="https://github.com/SyntaxBreaker"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="contact-cta__link" href="/projects">
           View My Projects
         </a>
       </div>
