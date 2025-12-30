@@ -23,3 +23,8 @@ body {
   background-color: #11151c;
   line-height: 1.5;
 }
+
+.no-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

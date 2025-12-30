@@ -32,15 +32,18 @@ const currentPath = pathname.slice(1);
       const nav = document.querySelector(".navbar");
       const list = document.querySelector(".navbar__list");
       const profile = document.querySelector(".navbar__profile");
+      const body = document.querySelector("body");
       checkbox.addEventListener("change", () => {
         if (checkbox.checked === true) {
           nav?.classList.add("navbar--active");
           list?.classList.add("navbar__list--active");
           profile?.classList.add("navbar__profile--active");
+          body?.classList.add("no-scroll")
         } else {
           nav?.classList.remove("navbar--active");
           list?.classList.remove("navbar__list--active");
           profile?.classList.remove("navbar__profile--active");
+          body?.classList.remove("no-scroll");
         }
       });
     </script>
