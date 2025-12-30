@@ -46,10 +46,6 @@ function Navbar({ currentPath }: NavbarProps) {
           </a>
         </li>
       </ul>
-      <div className="navbar__profile">
-        <p className="navbar__nickname">SyntaxBreaker</p>
-        <p className="navbar__profession">Front-End Developer</p>
-      </div>
     </nav>
   );
 }
