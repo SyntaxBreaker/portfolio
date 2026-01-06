@@ -13,10 +13,11 @@
   align-items: center;
 
   &--active {
-    height: calc(100vh - 32px);
-    width: calc(100% - 16px);
-    flex-direction: column;
-    position: fixed;
+    @media screen and (max-width: 1280px) {
+      height: calc(100vh - 32px);
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__menu {
@@ -24,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   &__input {
@@ -48,9 +50,14 @@
     list-style-type: none;
 
     &--active {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+      @media screen and (max-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        height: 100%;
+        width: 100%;
+      }
     }
 
     @media screen and (min-width: 1280px) {
