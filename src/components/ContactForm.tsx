@@ -6,7 +6,7 @@ interface IFormStatus {
   message: string;
 }
 
-function Form() {
+function ContactForm() {
   const [formStatus, setFormStatus] = useState<IFormStatus | null>(null);
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -79,4 +79,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default ContactForm;
