@@ -41,7 +41,15 @@ function ContactForm() {
     <div className="contact-form">
       <h2 className="contact-form__title">Send a message</h2>
       {formStatus && (
-        <span className="contact-form__status">{formStatus.message}</span>
+        <span
+          className={`contact-form__status ${
+            formStatus.status === "Error"
+              ? "contact-form__status--error"
+              : "contact-form__status--success"
+          }`}
+        >
+          {formStatus.message}
+        </span>
       )}
       <form
         className="contact-form__form"

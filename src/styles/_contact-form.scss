@@ -15,13 +15,20 @@
   &__status {
     display: inline-block;
     margin-top: 16px;
-    background-color: #d3d4d9;
+    background-color: variables.$primaryColor;
     padding: 16px;
     border-radius: 12px;
-    border: none;
-    color: black;
+    color: white;
     font-size: 1rem;
     width: 100%;
+
+    &--error {
+      border: 1px solid red;
+    }
+
+    &--success {
+      border: 1px solid green;
+    }
   }
 
   &__form {
