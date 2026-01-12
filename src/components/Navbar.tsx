@@ -7,7 +7,7 @@ function Navbar({ currentPath }: NavbarProps) {
     <nav className="navbar">
       <div className="navbar__menu">
         <a href="/" className="navbar__link navbar__link--title">
-          Portfolio
+          SyntaxBreaker
         </a>
         <input type="checkbox" id="menu-toggle" className="navbar__input" />
         <label className="navbar__button" htmlFor="menu-toggle">
