@@ -3,36 +3,26 @@ import Layout from "../layouts/layout.astro";
 import Card from "../components/Card";
 import ProjectList from "../components/ProjectList";
 import type Project from "../types/project";
+import { MECHANIC_PLUS_PROJECT } from "../constants";
 
 async function getProjects() {
   try {
     const response = await fetch(
-      "https://api.github.com/users/SyntaxBreaker/repos"
+      "https://api.github.com/users/SyntaxBreaker/repos",
     );
     const projects: Project[] = await response.json();
 
     const projectNames = ["self-discover", "trackhub", "twitch-chat"];
 
-    return projects.filter((project) => projectNames.includes(project.name));
+    return projects.filter(({ name }) => projectNames.includes(name));
   } catch (error) {
     console.error("Failed to fetch projects:", error);
     return [];
   }
 }
 
-const mechanicPlusProject: Project = {
-  id: 0,
-  html_url: "",
-  homepage: "https://mechanicplus.netlify.app",
-  name: "MechanicPlus",
-  description:
-    "MechanicPlus is an innovative tool that converts ways of managing your garage. This application offers various functions that help mechanics and customers maintain clarity and optimization of service processes.",
-  topics: ["nextjs", "react", "supabase", "tailwindcss", "typescript"],
-  fork: false,
-};
-
 const projects = await getProjects();
-const selectedProjects = [mechanicPlusProject, ...projects];
+const selectedProjects = [MECHANIC_PLUS_PROJECT, ...projects];
 ---
 
 <Layout title="SyntaxBreaker Projects">

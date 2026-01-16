@@ -1,35 +1,13 @@
+import { ABOUT_SECTIONS } from "../constants";
 import AboutCard from "./AboutCard";
-
-const cardData = [
-  {
-    id: 0,
-    imgSrc: "about.svg",
-    text: "Who am I? I'm a self-taught front-end developer who enjoys creating web applications.",
-  },
-  {
-    id: 1,
-    imgSrc: "location.svg",
-    text: "I am currently located in Poland, a country known for its rich history, vibrant culture, and beautiful landscapes.",
-  },
-  {
-    id: 2,
-    imgSrc: "interests.svg",
-    text: "My interests include programming, creating digital solutions, cybersecurity, personal development, and automotive.",
-  },
-  {
-    id: 3,
-    imgSrc: "goal.svg",
-    text: "Current goal: Develop my character and knowledge by taking on challenges and learning from new experiences and failures.",
-  },
-];
 
 function About() {
   return (
     <section className="about">
       <h2 className="about__heading">About</h2>
       <div className="about__cards">
-        {cardData.map((card) => (
-          <AboutCard key={card.id} imgSrc={card.imgSrc} text={card.text} />
+        {ABOUT_SECTIONS.map(({ id, imgSrc, text }) => (
+          <AboutCard key={id} imgSrc={imgSrc} text={text} />
         ))}
       </div>
     </section>
