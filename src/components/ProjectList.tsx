@@ -1,11 +1,11 @@
-import type IProject from "../types/project";
+import type Project from "../types/project";
 import ProjectCard from "./ProjectCard";
 
-function ProjectList({ projects }: { projects: IProject[] }) {
+function ProjectList({ projects }: { projects: Project[] }) {
   return (
     <section className="project-list">
       {projects.length > 0 &&
-        projects.map((project: IProject) => (
+        projects.map((project: Project) => (
           <ProjectCard project={project} key={project.id} />
         ))}
       <a

@@ -2,14 +2,14 @@
 import Layout from "../layouts/layout.astro";
 import Card from "../components/Card";
 import ProjectList from "../components/ProjectList";
-import type IProject from "../types/project";
+import type Project from "../types/project";
 
 async function getProjects() {
   try {
     const response = await fetch(
       "https://api.github.com/users/SyntaxBreaker/repos"
     );
-    const projects: IProject[] = await response.json();
+    const projects: Project[] = await response.json();
 
     const projectNames = ["self-discover", "trackhub", "twitch-chat"];
 
@@ -20,7 +20,7 @@ async function getProjects() {
   }
 }
 
-const mechanicPlusProject: IProject = {
+const mechanicPlusProject: Project = {
   id: 0,
   html_url: "",
   homepage: "https://mechanicplus.netlify.app",

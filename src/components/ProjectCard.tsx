@@ -1,7 +1,7 @@
-import type IProject from "../types/project";
+import type Project from "../types/project";
 import TechnologyList from "./TechnologyList";
 
-function ProjectCard({ project }: { project: IProject }) {
+function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="project-card">
       <div className="project-card__header">
