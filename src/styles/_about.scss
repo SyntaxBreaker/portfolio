@@ -19,7 +19,7 @@
   }
 
   &__card {
-    padding: 1.5rem;
+    padding: 32px;
     background-color: variables.$primaryColor;
     display: flex;
     flex-direction: column;
@@ -27,6 +27,11 @@
     gap: 32px;
     flex-basis: calc(50% - 8px);
     border-radius: 16px;
+
+    @media screen and (max-width: 1280px) {
+      padding: 16px;
+      gap: 16px;
+    }
   }
 
   &__text {

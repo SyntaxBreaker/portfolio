@@ -23,6 +23,10 @@
     flex-basis: calc(25% - 8px);
     background-color: variables.$primaryColor;
     border-radius: 16px;
+
+    @media screen and (max-width: 1280px) {
+      padding: 16px;
+    }
   }
 
   &__name {
