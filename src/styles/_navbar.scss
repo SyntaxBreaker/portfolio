@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: row;
   gap: 80px;
-  font-size: 1.5rem;
   border-radius: 24px;
   z-index: 1;
   width: 100%;
@@ -71,11 +70,7 @@
     color: variables.$secondaryColor;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.75rem;
-
-    @media screen and (min-width: 1280px) {
-      font-size: 1.5rem;
-    }
+    font-size: 1.25rem;
 
     &--title {
       color: #fefefe;
