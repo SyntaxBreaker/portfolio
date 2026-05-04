@@ -24,6 +24,8 @@ function SEO({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
 
+      <link rel="sitemap" href="/sitemap-index.xml" />
+
       <link rel="canonical" href={canonicalUrl} />
 
       <meta property="og:type" content="website" />
