@@ -1,8 +1,9 @@
 ---
 import "../styles/main.scss";
 import Navbar from "../components/Navbar";
+import SEO from "../components/SEO";
 
-const { title } = Astro.props;
+const { title, description, image, keywords } = Astro.props;
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
@@ -12,11 +13,13 @@ const currentPath = pathname.slice(1);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Welcome to my portfolio! I'm a self-taught front-end developer who enjoys creating digital products and solutions."
+    <SEO
+      title={title}
+      description={description}
+      image={image}
+      pathname={pathname}
+      keywords={keywords}
     />
-    <title>{title}</title>
   </head>
   <body>
     <div class="layout">
@@ -27,7 +30,7 @@ const currentPath = pathname.slice(1);
     </div>
     <script>
       const checkbox = document.querySelector(
-        ".navbar__input"
+        ".navbar__input",
       ) as HTMLInputElement;
       const nav = document.querySelector(".navbar");
       const list = document.querySelector(".navbar__list");
@@ -38,7 +41,7 @@ const currentPath = pathname.slice(1);
           nav?.classList.add("navbar--active");
           list?.classList.add("navbar__list--active");
           profile?.classList.add("navbar__profile--active");
-          body?.classList.add("no-scroll")
+          body?.classList.add("no-scroll");
         } else {
           nav?.classList.remove("navbar--active");
           list?.classList.remove("navbar__list--active");

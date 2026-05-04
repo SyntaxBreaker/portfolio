@@ -25,7 +25,11 @@ const projects = await getProjects();
 const selectedProjects = [MECHANIC_PLUS_PROJECT, ...projects];
 ---
 
-<Layout title="SyntaxBreaker Projects">
+<Layout
+  title="SyntaxBreaker Projects"
+  description="Explore my featured front-end projects. From interactive web applications to responsive websites, see how I translate ideas into clean and functional code."
+  keywords="projects, web applications, front-end, coding, development"
+>
   <Card title="Projects" description="You can see my projects below." />
   <ProjectList projects={selectedProjects} />
 </Layout>
