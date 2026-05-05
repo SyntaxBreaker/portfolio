@@ -4,7 +4,7 @@ export const ABOUT_SECTIONS = [
   {
     id: 0,
     imgSrc: "about.svg",
-    text: "Who am I? I'm a self-taught front-end developer who enjoys creating web applications.",
+    text: "Who am I? I'm a self-taught full-stack developer who enjoys creating web applications.",
   },
   {
     id: 1,
@@ -51,6 +51,7 @@ export const TECH_STACK = [
   "JavaScript",
   "TypeScript",
   "Node.js",
+  "NestJS",
   "React",
   "Next.js",
   "Git",
