@@ -7,6 +7,51 @@ const { title, description, image, keywords } = Astro.props;
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "SyntaxBreaker",
+  url: "https://syntaxbreaker.netlify.app",
+  description:
+    "Full-stack Developer and UI/UX Designer specializing in front-end development, back-end systems, and Figma design.",
+  jobTitle: "Full-stack Developer & UI/UX Designer",
+  knowsAbout: [
+    "Front-end Development",
+    "Back-end Development",
+    "UI/UX Design",
+    "Figma",
+    "Web Development",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Development and Design Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "UI/UX Design in Figma",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Front-end Development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Back-end Development",
+        },
+      },
+    ],
+  },
+  sameAs: ["https://github.com/SyntaxBreaker"],
+};
 ---
 
 <html lang="en">
@@ -19,6 +64,11 @@ const currentPath = pathname.slice(1);
       image={image}
       pathname={pathname}
       keywords={keywords}
+    />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(personSchema)}
     />
   </head>
   <body>
