@@ -48,6 +48,7 @@ export const TECH_STACK = [
   "HTML",
   "CSS",
   "SCSS",
+  "Tailwind CSS",
   "JavaScript",
   "TypeScript",
   "Node.js",
@@ -55,7 +56,7 @@ export const TECH_STACK = [
   "React",
   "Next.js",
   "Git",
-  "Tailwind CSS",
+  "Figma",
 ];
 
 export const MECHANIC_PLUS_PROJECT: Project = {
